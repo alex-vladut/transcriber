@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "transcriber",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authtranscriber7684b0c9",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

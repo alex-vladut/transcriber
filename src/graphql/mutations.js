@@ -2,10 +2,7 @@
 // this is an auto generated file. This will be overwritten
 
 export const createTask = /* GraphQL */ `
-  mutation CreateTask(
-    $input: CreateTaskInput!
-    $condition: ModelTaskConditionInput
-  ) {
+  mutation CreateTask($input: CreateTaskInput!, $condition: ModelTaskConditionInput) {
     createTask(input: $input, condition: $condition) {
       id
       title
@@ -16,10 +13,7 @@ export const createTask = /* GraphQL */ `
   }
 `;
 export const updateTask = /* GraphQL */ `
-  mutation UpdateTask(
-    $input: UpdateTaskInput!
-    $condition: ModelTaskConditionInput
-  ) {
+  mutation UpdateTask($input: UpdateTaskInput!, $condition: ModelTaskConditionInput) {
     updateTask(input: $input, condition: $condition) {
       id
       title
@@ -30,10 +24,7 @@ export const updateTask = /* GraphQL */ `
   }
 `;
 export const deleteTask = /* GraphQL */ `
-  mutation DeleteTask(
-    $input: DeleteTaskInput!
-    $condition: ModelTaskConditionInput
-  ) {
+  mutation DeleteTask($input: DeleteTaskInput!, $condition: ModelTaskConditionInput) {
     deleteTask(input: $input, condition: $condition) {
       id
       title

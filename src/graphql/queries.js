@@ -13,11 +13,7 @@ export const getTask = /* GraphQL */ `
   }
 `;
 export const listTasks = /* GraphQL */ `
-  query ListTasks(
-    $filter: ModelTaskFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
+  query ListTasks($filter: ModelTaskFilterInput, $limit: Int, $nextToken: String) {
     listTasks(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
